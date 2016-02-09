@@ -7,8 +7,7 @@ angular.module('myApp.controllers', ['ngRoute'])
         personFactory.getPersons().then(function (response) {
             $scope.persons = response;
             $scope.changeName();
-           /* $scope.searchQuery = [];
-*/
+
         });
 
         $scope.changeName = function () {
