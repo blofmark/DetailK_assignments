@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e1e1e1;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+}
+
+.header {
+    background: #2b73a0;
+    height: 90px;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+/**********************NAVIGATION**************************************/
+.nav {
+    height: 65px;
+    width: 100%;
+    background-color: #3a83b1;
+    list-style-type: none;
+    position: absolute;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px -1px 69px -8px rgba(79, 79, 79, 1);
+    -moz-box-shadow: 0px -1px 69px -8px rgba(79, 79, 79, 1));
+    box-shadow: 0px -1px 69px -8px rgba(79, 79, 79, 1);
+}
+
+.nav li {
+    display: block;
+    position: relative;
+    margin-left: 55px;
+
+}
+
+.nav li a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    float: left;
+    padding: 22px 30px;
+}
+
+
+.nav a:visited, a:hover, a:active{
+    display: block;
+    opacity: 1;
+    background-color: #056;
+    color: #fff;
+}
+
+.isActive{
+    display: block;
+    opacity: 1;
+    background-color: #056;
+    color: #fff;
+
+}
+
+
+
+/****************************** CONTENT - ASSIGNMENT 1 **************************************/
+
+.content {
+    width: 100%;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 16px;
+}
+
+.personContainer {
+    width: 70%;
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+table.personTbl {
+    border: 1px solid #bbbbbb;
+}
+
+table.personTbl tr th {
+    background: #69B2E0;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+table.personTbl tr td {
+    border-top: 1px solid #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+    padding: 5px 10px;
+}
+
+.searchField {
+    width: 300px;
+    margin-bottom: 10px;
+    float: right;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+/******************************  CONTENT - ASSIGNMENT 2  **************************************/
+
+.scoreContainer {
+    width: 70%;
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.q-title--bold {
+    font-weight: bold;
+}
+
+.q-title {
+    font-weight: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+/******************** SUBJECT TABLE *******************************/
+.score table {
+    margin: 0 auto;
+    font-size: 14px;
+
+}
+
+table td,
+table th {
+    /*border: 1px solid #747474;*/
+    padding-left: 10px;
+}
+
+.vertical {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); /* Safari/Chrome */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -o-transform: rotate(-90deg); /* Opera */
+    -ms-transform: rotate(-90deg); /* IE 9 */
+}
+
+table.subjects {
+    text-align: left;
+    border-top: 1px solid #747474;
+    border-right: 1px solid #747474;
+    border-left: 1px solid #747474;
+    font-size: 15px;
+}
+
+table.subjects tr th.vertical {
+    height: 80px;
+    line-height: 14px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); /* Safari/Chrome */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -o-transform: rotate(-90deg); /* Opera */
+    -ms-transform: rotate(-90deg); /* IE 9 */
+
+}
+
+table.subjects tr th:nth-child(1) {
+    width: 55%;
+}
+
+table.subjects tr th:nth-child(2) {
+    width: 7.5%;
+}
+
+table.subjects tr th:nth-child(3) {
+    width: 7.5%;
+}
+
+table.subjects tr th:nth-child(n+4) {
+    width: 6.5%;
+}
+
+/******************** QUESTION TABLE *******************************/
+table.questions {
+    border-right: 1px solid #747474;
+    border-left: 1px solid #747474;
+    border-bottom: 1px solid #747474;
+}
+
+table.questions td {
+    padding: 5px 0 0 10px;
+    width: 92%;
+}
+
+table.questions table tr td {
+    padding: 5px 0;
+}
+
+table.questions table tr td:nth-child(1) {
+    width: 70%;
+}
+
+table.questions table tr td:nth-child(n+2) {
+    width: 9.5%;
+}
+
+/*********************************** FOOTER ***************************************************/
+.footer {
+    width: 100%;
+    height: 70px;
+    background: #2b73a0;
+    padding-top: 15px;
+}
+
+.footer, .push {
+    height: 65px;
+    clear: both;
+}

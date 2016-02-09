@@ -1,0 +1,43 @@
+<section class="scoreContainer">
+
+    <h1>{{headline}}</h1>
+
+    <div class="score">
+        <table class="subjects">
+            <tr ng-repeat="data in scoreData">
+                <th>Pr&oslash;vek&oslash;bssp&oslash;rgsm&aring;l</th>
+                <th ng-repeat="subject in  data.title" class="vertical">
+                    {{subject}}
+                </th>
+                <th></th>
+            </tr>
+        </table>
+
+        <table class="questions">
+            <tr ng-repeat="question in scoreData.salesperformance.Data">
+                <td class="q-title--bold">
+                    {{question.title}}
+
+                    <table>
+                        <tbody>
+                        <tr ng-repeat="subQuest in question.Data">
+                            <td class="q-title">
+                                {{ subQuest.title }}
+                            <td ng-repeat="scores in subQuest.score" ng-class="setColor(scores)" class="q-title center">
+                                {{scores}}
+                            </td>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <td ng-class="setColor(question.score)" class="center">
+                        {{question.score}}
+                    </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="push"></div>
+</section>

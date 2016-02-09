@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Detailkarriere Assignments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------ Stylesheet ---------------------->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!------------------ Scripts ---------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.9/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/factory.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div class="wrapper">
+        <div class="header">
+            <ul class="nav">
+                <li><a class="isActive" href="#/assignment1"> Assignment 1</a></li>
+                <li><a href="#/assignment2"> Assignment 2</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div ng-view></div>
+
+        </div>
+        <div class="push"></div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+</html>

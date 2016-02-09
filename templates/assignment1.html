@@ -1,0 +1,27 @@
+<div class="personContainer">
+
+    <h1>{{headline}}</h1>
+
+    <input class="searchField" type="text" name="keyword" placeholder="Search" ng-model="searchQuery">
+
+    <table class="personTbl" border="0">
+        <thead>
+        <tr>
+            <th>Person</th>
+            <th>Position</th>
+            <th>Salery</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="person in persons | filter:searchQuery">
+            <td ng-repeat="names in persons.name">{{names}}</td>
+            <td>{{person.name}}</td>
+            <td>{{person.position}}</td>
+            <td>{{person.salery}}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+</div>
