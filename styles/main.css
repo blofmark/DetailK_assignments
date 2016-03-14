@@ -128,6 +128,7 @@ table.personTbl tr td {
 
 .q-title {
     font-weight: normal;
+    background: #ffffff;
 }
 
 .center {
@@ -155,32 +156,30 @@ table.personTbl tr td {
     font-size: 14px;
 }
 
+.white{
+    background-color: #ffffff;
+}
 
 /******************** SUBJECT TABLE *******************************/
 
-/*table td, table th {
-    padding-left: 10px;
-}*/
 
-/*
 table.subjects {
     text-align: left;
-    !*  border-top: 1px solid #747474;
-      border-right: 1px solid #747474;
-      border-left: 1px solid #747474;*!
     font-size: 15px;
     width: 90%;
+    padding-top: 20px
 }
 
-table.subjects tr th.vertical {
+.vertical {
     height: 80px;
-    line-height: 14px;
+    width: 40px;
+    text-align: left;
+    white-space: nowrap;
     transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); !* Safari/Chrome *!
-    -moz-transform: rotate(-90deg); !* Firefox *!
-    -o-transform: rotate(-90deg); !* Opera *!
-    -ms-transform: rotate(-90deg); !* IE 9 *!
-
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
 }
 
 table.subjects tr th {
@@ -189,7 +188,7 @@ table.subjects tr th {
 }
 
 table.subjects tr th:nth-child(1) {
-    width: 55%;
+    width: 75.5%;
 }
 
 table.subjects tr th:nth-child(2) {
@@ -203,53 +202,33 @@ table.subjects tr th:nth-child(3) {
 table.subjects tr th:nth-child(n+4) {
     width: 6.5%;
 }
-*/
 
 /******************** QUESTION TABLE *******************************/
-table.questions table {
-    border-spacing: 3px 0;
-}
-
 table.questions {
-    /*  border-right: 1px solid #747474;
-      border-left: 1px solid #747474;
-      border-bottom: 1px solid #747474;*/
-    width: 95%;
+    width: 90%;
     text-align: left;
     font-size: 15px;
 }
 
-.vertical {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); /* Safari/Chrome */
-    -moz-transform: rotate(-90deg); /* Firefox */
-    -o-transform: rotate(-90deg); /* Opera */
-    -ms-transform: rotate(-90deg); /* IE 9 */
-}
-
-table.questions tr th.vertical {
-    height: 50px;
-    width: 40px;
-    line-height: 14px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); /* Safari/Chrome */
-    -moz-transform: rotate(-90deg); /* Firefox */
-    -o-transform: rotate(-90deg); /* Opera */
-    -ms-transform: rotate(-90deg); /* IE 9 */
-}
-
-
-table.questions table tr td {
-    padding: 5px 0;
+table.questions tr td:nth-child(2){
+    width: 51px;
 }
 
 /***************************** SUBQUESTION TABLE *********************************************/
-table.questions table.subQuestion tr td:nth-child(1) {
-    width: 40%;
+table.subQuestion{
+    border-spacing: 3px 0;
 }
 
-table.questions table.subQuestion tr td:nth-child(n+2) {
-    width: 3%;
+table.subQuestion tr td{
+    padding: 5px 0;
+}
+
+table.subQuestion tr td:nth-child(1) {
+    width: 15%;
+}
+
+table.subQuestion tr td:nth-child(n+2) {
+    width: 1%;
 }
 
 

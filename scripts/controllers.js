@@ -60,6 +60,11 @@ angular.module('myApp.controllers', ['ngRoute'])
 
         }
 
+        $scope.test = ({
+            'title': 'test',
+            'score': ['20', '32','40']
+        })
+
 
     }])
 
